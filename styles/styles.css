@@ -100,10 +100,15 @@ main {
 	color: #FFFFFF;
 	font-size: 1em;
 	display: grid;
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: 1fr 1fr;
 	font-weight: lighter;
 	grid-template-rows: 2fr;
 	column-gap: 5em;
+}
+
+.main-content {
+	position: relative;
+	bottom: 3em;
 }
 
 img.logo2 {
@@ -116,7 +121,7 @@ p.summary {
 	width: 500px;
 	position: relative;
 	left: 50px;
-	bottom: 100px;
+	bottom: 140px;
 }
 
 button.watchnow {
@@ -128,11 +133,16 @@ button.watchnow {
 	font-size: 1em;
 	position: relative;
 	left: 50px;
-	bottom: 5em;
+	bottom: 7em;
 	width: 200px;
 	font-weight: bold;
 	text-align: center;
-	transition: all 0.5s
+	transition: all 0.5s;
+	margin-top: 0.5em;
+}
+
+.watchnow:active {
+	transform: translateY(4px);
 }
 
  .watchnow span {
@@ -159,3 +169,91 @@ button.watchnow {
 	opacity: 1;
 	right: 0;
 }
+
+.social-media {
+	width: 50%;
+	margin-left: 2em;
+	margin-top: 2em;
+}
+
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  margin-right: .02em
+}
+
+.fa-facebook, .fa-twitter, .fa-instagram{
+	color: white;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* End of styles for main section*/
+
+/* Start of style for aside */
+
+.tv-show-rating {
+	padding: 7em;
+	position: relative;
+	left: -10px;
+	bottom: 4em;
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-row-gap: 1em;
+	z-index: -1;
+	padding-bottom: 0;
+
+}
+
+/* style for the individual item */
+.details {
+	font-size:0.8em;
+}
+
+.details-subh {
+	font-weight: bold;
+	margin-bottom: .2em;
+}
+
+.details-subh-2 {
+	border-left:.2em solid #FFFFFF;
+	padding-left: .7em;
+	border-width: thin;
+}
+
+.details-subh-title {
+	font-size: 0.7em;
+	font-weight: bold;
+}
+
+.reviews {
+	font-size: 0.8em;
+}
+
+.reviews-info, .reviews_2 {
+	border-left: .2em solid #FFFFFF;
+	padding-left: .7em;
+	border-width: thin;
+}
+
+.reviews-source {
+	text-align: right;
+	font-weight: bold;
+}
+
+.video-title {
+	font-size: 0.8em;
+	font-weight: bold;
+	margin-bottom: .2em;
+}
+
+
+
